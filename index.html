@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaGo - Aluguel por Temporada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Header igual ao Airbnb com cores brasileiras -->
+    <header class="airbnb-header">
+        <div class="header-container">
+            <!-- Logo CasaGo -->
+            <div class="logo-section">
+                <div class="logo">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false">
+                        <path d="M16 0C9.373 0 4 5.373 4 12c0 9 12 20 12 20s12-11 12-20c0-6.627-5.373-12-12-12zm0 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z" fill="#009639"/>
+                    </svg>
+                    <span>CasaGo</span>
+                </div>
+            </div>
+
+            <!-- Barra de busca central -->
+            <div class="search-bar" id="search-bar">
+                <div class="search-field destination-field">
+                    <div class="field-label">Para onde?</div>
+                    <input type="text" id="destination-input" placeholder="Buscar destinos" autocomplete="off" aria-label="Destino da viagem">
+                    <div id="destination-suggestions" class="suggestions-dropdown hidden"></div>
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-field checkin-field">
+                    <div class="field-label">Check-in</div>
+                    <input type="date" id="checkin-input" aria-label="Data de check-in">
+                </div>
+                <div class="search-divider"></div>
+                <div class="search-field checkout-field">
+                    <div class="field-label">Check-out</div>
+                    <input type="date" id="checkout-input" aria-label="Data de check-out">
+                </div>
+                <button class="search-button" id="search-button" aria-label="Buscar propriedades">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- User Menu -->
+            <div class="user-menu">
+                <a href="#" class="host-link">Anuncie seu espaço</a>
+                <div class="user-profile">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Encontre acomodações únicas no Brasil</h1>
+                <p>Alugue casas, apartamentos e experiências inesquecíveis com anfitriões locais em mais de 150 cidades brasileiras.</p>
+            </div>
+        </section>
+
+        <!-- Properties Section -->
+        <section class="properties-container">
+            <h2 class="section-title">Propriedades em destaque</h2>
+            <div class="properties-grid" id="properties-grid">
+                <!-- Properties will be rendered here -->
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <h2 class="section-title">Explore por categoria</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-mountain"></i>
+                    <span>Montanhas</span>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Praia</span>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-city"></i>
+                    <span>Cidade</span>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-tree"></i>
+                    <span>Campo</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CasaGo</h3>
+                <ul>
+                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#">Central de ajuda</a></li>
+                    <li><a href="#">Seguro</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Comunidade</h3>
+                <ul>
+                    <li><a href="#">Anfitriões</a></li>
+                    <li><a href="#">Experiências</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">Centro de recursos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CasaGo. Todos os direitos reservados. Feito com ❤️ no Brasil 🇧🇷</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

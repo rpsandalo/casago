@@ -1,0 +1,30 @@
+{
+  "name": "casago",
+  "version": "1.0.0",
+  "description": "Plataforma brasileira de aluguel por temporada inspirada no Airbnb",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=8000",
+    "build": "echo 'Projeto estático - nada para buildar'",
+    "test": "echo 'Testes ainda não implementados'"
+  },
+  "keywords": [
+    "airbnb",
+    "aluguel",
+    "temporada",
+    "brasil",
+    "propriedades",
+    "hospedagem"
+  ],
+  "author": "CasaGo Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SEU-USUARIO/casago.git"
+  },
+  "homepage": "https://SEU-USUARIO.github.io/casago",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
